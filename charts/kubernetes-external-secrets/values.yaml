@@ -161,8 +161,7 @@ serviceMonitor:
   enabled: false
   interval: "30s"
   namespace:
-  labels:
-    prometheus:
+  prometheus:
 
 deploymentInitContainers: {}
 
