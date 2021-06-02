@@ -11,6 +11,7 @@ metadata:
     helm.sh/chart: {{ include "kubernetes-external-secrets.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
+    prometheus: {{ .Values.serviceMonitor.promcops }}
 spec:
   endpoints:
   - interval: {{ .Values.serviceMonitor.interval }}
